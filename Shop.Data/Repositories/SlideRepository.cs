@@ -3,7 +3,7 @@ using Shop.Model.Models;
 
 namespace Shop.Data.Repositories
 {
-    public interface ISlideRepository
+    public interface ISlideRepository : IRepository<Slide>
     {
     }
 

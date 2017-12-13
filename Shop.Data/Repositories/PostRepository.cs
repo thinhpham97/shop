@@ -3,7 +3,7 @@ using Shop.Model.Models;
 
 namespace Shop.Data.Repositories
 {
-    public interface IPostRepository
+    public interface IPostRepository : IRepository<Post>
     {
     }
 

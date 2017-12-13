@@ -4,7 +4,7 @@ using System.Linq.Expressions;
 
 namespace Shop.Data.Infrastructure
 {
-    internal interface IRepository<T> where T : class
+    public interface IRepository<T> where T : class
     {
         // Marks an entity as new
         void Add(T entity);
@@ -14,6 +14,8 @@ namespace Shop.Data.Infrastructure
 
         // Marks an entity to be removed
         void Delete(T entity);
+
+        void Delete(int id);
 
         //Delete multi records
         void DeleteMulti(Expression<Func<T, bool>> where);
